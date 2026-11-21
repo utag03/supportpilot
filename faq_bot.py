@@ -1,5 +1,6 @@
 ESCALATION_WORDS = ["lawyer", "scam", "fraud", "angry"]
 turns = 0
+escalations=0
 print("SupportPilot FAQ bot. Type 'quit' to exit.")
 while True:
     message = input("You:").strip().lower()
@@ -7,12 +8,12 @@ while True:
         break
     turns += 1
     need_humans=False
-    escalations=0
+    
     for word in ESCALATION_WORDS:
         if word in message:
             need_humans=True
-            escalations+=1
     if need_humans:
+        escalations+=1
         print("Bot: I'm connecting you with a human agent.")
     elif message == "":
         print("Bot: Please type a question.")
