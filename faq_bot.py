@@ -10,7 +10,7 @@ while True:
         break
     turns += 1
     need_humans=False
-    
+
     for word in ESCALATION_WORDS:
         if word in message:
             need_humans=True
@@ -25,8 +25,6 @@ while True:
             print("Bot: Sorry, I don't know that one yet.")
         else:
             print(f"Bot: {answer}")
-
-
 
 print(
     f"Goodbye! You sent {turns} messages and had "
