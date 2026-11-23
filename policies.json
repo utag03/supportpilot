@@ -1,0 +1,24 @@
+[
+{
+    "topic": "refund",
+    "keywords": ["refund", "money back"],
+    "answer": "Refunds are available within 7 days for damaged items."
+},
+{
+    "topic": "delivery",
+    "keywords": ["delivery", "shipping"],
+    "answer": "Delivery usually takes 3-5 business days."
+},
+  {
+    "topic": "password",
+    "keywords": ["password"],
+    "answer": "You can reset your password using the 'Forgot Password' link."
+  },
+
+  {
+    "topic":"cancel",
+    "keywords":["cancel"],
+    "answer":"Cancellation initiated."
+
+  }
+]

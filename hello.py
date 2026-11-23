@@ -3,6 +3,8 @@ def greet(name):
 def route(message):
     if "refund" in message.lower():
         return "refund_team"
+    elif "order" in message.lower() or "delivery" in message.lower():
+        return "order_team"
     else:
         return "general_support_team"
 if __name__=="__main__":
